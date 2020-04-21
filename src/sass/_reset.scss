@@ -32,4 +32,9 @@ body {
   line-height: 1.78;
   font-weight: 300;
   color: $color-black;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
 }
