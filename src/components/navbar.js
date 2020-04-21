@@ -1,13 +1,14 @@
-import React from "React"
+import React from "react"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import "./navbar.scss"
 
 const NavbarLink = props => {
   return (
-    <li>
+    <li className="navbar__li">
       <Link
         activeClassName="navbar__link--active"
-        className="navbar__link"
+        className="navbar__link mx-5"
         to={props.to}
       >
         {props.name}
@@ -27,9 +28,12 @@ NavbarLink.defaultProps = {
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul className="navbar__nav">
+    <nav className="navbar py-4 center">
+      <ul className="navbar__nav m-0 container d-flex justify-content-center">
         <NavbarLink name="01 : Home" />
+        <NavbarLink name="02 : Works" />
+        <NavbarLink name="03 : About me" />
+        <NavbarLink name="04 : Contact" />
       </ul>
     </nav>
   )

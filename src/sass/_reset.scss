@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Roboto Mono";
-  src: url("../fonts/RobotoMono-Light.ttf") format("truetype");
+  src: url("../fonts/RobotoMono-Bold.ttf") format("truetype");
   font-weight: 700;
 }
 
@@ -20,6 +20,10 @@
 
 html {
   font-size: 62.5%;
+
+  @media (max-width: 800px) {
+    font-size: 50%;
+  }
 }
 
 body {

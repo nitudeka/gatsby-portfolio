@@ -1,12 +1,24 @@
+@import "../sass/variables";
+
 .navbar {
-  padding: 3rem 0;
-  font-size: 1.4rem;
+  background-color: $color-white;
+
+  &__nav {
+    list-style: none;
+  }
 
   &__link {
-    transition: all 0.2s;
+    color: inherit;
+    text-decoration: none !important;
+    font-size: 2rem;
 
     &:hover {
       font-weight: 700;
+      color: rgba($color-black, 0.8);
     }
+  }
+
+  &__li:not(:last-child) {
+    border-right: 1px solid $color-black;
   }
 }
