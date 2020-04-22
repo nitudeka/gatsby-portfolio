@@ -1,13 +1,30 @@
 @import "../sass/variables";
 
 .home {
+  &-about {
+    margin-top: 7rem;
+    background-color: $color-black;
+    color: $color-white;
+    height: 20vw;
+
+    b {
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 2.5rem;
+    }
+
+    .heading {
+      font-weight: 700;
+    }
+  }
+
   &-project {
     &__card {
       color: $color-white;
 
       .side {
-        border-top: 3px solid $color-white;
-        border-right: 3px solid $color-white;
+        // border-top: 2px solid $color-white;
+        // border-right: 2px solid $color-white;
       }
 
       .info {
@@ -64,6 +81,22 @@
   }
 
   &-projects {
+    &__btn {
+      border: 3px solid $color-black;
+      background-color: $color-white;
+      font-weight: 700;
+      outline: none !important;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: translateY(-3px);
+      }
+
+      &:active {
+        transform: translateY(-1px);
+      }
+    }
+
     &__heading {
       margin-bottom: 8rem;
       font-weight: 700;

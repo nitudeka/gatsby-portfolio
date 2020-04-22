@@ -1,14 +1,26 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import "./header.scss"
 import HeaderBg from "../images/headerbg.jpg"
 
-const Header = ({ data }) => {
+const Header = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      file(relativePath: { eq: "headerbg.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1280) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <header className="header position-relative center">
-      <img
-        src={HeaderBg}
+      <Img
+        fluid={data.file.childImageSharp.fluid}
         alt="header"
         className="position-absolute h-100 w-100"
       />
