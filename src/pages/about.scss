@@ -1,0 +1,25 @@
+@import "../sass/variables";
+
+.about {
+  margin-top: 7rem;
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+
+  b {
+    font-weight: 700;
+  }
+
+  &__container {
+    background-color: $color-black;
+    height: 70vh;
+    color: $color-white;
+
+    .question-mark {
+      font-weight: 700;
+      font-size: 20rem;
+    }
+  }
+}
