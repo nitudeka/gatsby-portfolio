@@ -6,8 +6,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Header from "../components/header"
 import "./homepage.scss"
+import RedirectSvg from "../images/svg/share.svg"
 
-const ProjectCard = ({ imgData }) => {
+const ProjectCard1 = ({ imgData }) => {
   return (
     <div className="home-project__card">
       <div className="home-project__card-container position-relative d-flex flex-column justify-content-end">
@@ -26,6 +27,31 @@ const ProjectCard = ({ imgData }) => {
             <p className="content">Landing page for a travel company</p>
           </div>
         </div>
+      </div>
+    </div>
+  )
+}
+
+const ProjectCard = ({ imgData }) => {
+  return (
+    <div className="home-project position-relative">
+      <Img
+        fluid={imgData}
+        className="home-project__img w-100 h-100 position-absolute"
+        alt="project"
+      />
+      <div className="home-project__content p-4 w-100">
+        <b className="home-project__number d-block">001/006</b>
+        <b className="home-project__stack d-block">HTML : SASS</b>
+        <b className="home-project__name d-block">Natours</b>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda
+          eaque obcaecati fuga vitae quo enim facilis, necessitatibus reiciendis
+          porro fugiat.
+        </p>
+      </div>
+      <div className="home-project__redirect position-absolute center shadow">
+        <img src={RedirectSvg} alt="redirect" />
       </div>
     </div>
   )
