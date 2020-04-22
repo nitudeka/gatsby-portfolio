@@ -8,11 +8,16 @@ import "../sass/main.scss"
 
 const Layout = ({ children }) => {
   return (
-    <>
-      <Navbar />
-      <main>{children}</main>
+    <div
+      style={{ minHeight: "100vh" }}
+      className="d-flex flex-column justify-content-between"
+    >
+      <div>
+        <Navbar />
+        <main>{children}</main>
+      </div>
       <Footer />
-    </>
+    </div>
   )
 }
 

@@ -1,0 +1,50 @@
+@import "../sass/variables";
+
+.contact {
+  margin-top: 7rem;
+
+  &__heading {
+    background-color: $color-black;
+    color: $color-white;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  &__form {
+    input,
+    textarea {
+      outline: none !important;
+      border: 2px solid $color-black;
+      padding: 0.5rem 1rem;
+
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  &__btn {
+    border: 2px solid $color-black;
+    background-color: $color-white;
+    font-weight: 700;
+    outline: none !important;
+    transition: all 0.2s;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__links {
+    background-color: $color-black;
+
+    .img-container {
+      background-color: $color-white;
+      border-radius: 50%;
+    }
+
+    img {
+      height: 4rem;
+    }
+  }
+}

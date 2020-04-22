@@ -1,6 +1,4 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,7 +6,7 @@ import "./about.scss"
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="About" />
     <div className="about">
       <div className="container">
         <div className="about__container center flex-column">
