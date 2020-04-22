@@ -1,0 +1,28 @@
+@import "../sass/variables";
+
+.project {
+  border: 1px solid $color-black;
+
+  &__number {
+    font-size: 1.1rem;
+  }
+
+  &__name {
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  &__stack {
+    font-size: 1.3rem;
+  }
+
+  &__container {
+    p {
+      margin: 0;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+}

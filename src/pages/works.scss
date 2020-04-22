@@ -1,0 +1,23 @@
+@import "../sass/variables";
+
+.works {
+  margin-top: 7rem;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+
+    @media (max-width: 540px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__header {
+    background-color: $color-black;
+
+    img {
+      height: 20rem;
+    }
+  }
+}

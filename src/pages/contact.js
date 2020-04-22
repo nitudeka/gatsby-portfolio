@@ -24,10 +24,10 @@ const ContactPage = () => {
       <div className="contact container">
         <div className="contact__heading text-center py-3">C0NTACT ME</div>
         <div className="row mt-5">
-          <div className="col-7">
+          <div className="col-md-7">
             <Form />
           </div>
-          <div className="col-5">
+          <div className="col-md-5 mt-md-0 mt-5">
             <ul className="contact__list">
               <li className="mb-4">
                 <b>Phone:</b> +91 6001206578

@@ -9,9 +9,11 @@ const AboutPage = () => (
     <SEO title="About" />
     <div className="about">
       <div className="container">
-        <div className="about__container center flex-column">
+        <div className="about__container p-5 center flex-column">
           <p className="display-1 text-center question-mark">?</p>
-          <p>Trust me, I really don't know what happened to the image</p>
+          <p className="text-center">
+            Trust me, I really don't know what happened to the image
+          </p>
         </div>
       </div>
       <div className="container about__content">
@@ -23,7 +25,7 @@ const AboutPage = () => (
         </p>
         <p>
           OK, sorry for that (Actually, I am terrible at writing. So filling out
-          the about page with absolute sh!t).
+          the "about" page with absolute sh!t).
         </p>
         <h2>Lets start!</h2>
         <p>I am a self taught full stack developer.</p>

@@ -35,7 +35,7 @@ const Projects = () => {
   const data = useStaticQuery(graphql`
     query {
       allFile(
-        filter: { dir: { regex: "/project/" } }
+        filter: { dir: { regex: "/project/featured/" } }
         sort: { fields: [name] }
       ) {
         edges {
@@ -58,7 +58,7 @@ const Projects = () => {
           Featured Projects:
         </h2>
         <div className="home-projects__container">
-          {data.allFile.edges.map(({ node, i }) => {
+          {data.allFile.edges.map(({ node }, i) => {
             return <ProjectCard key={i} imgData={node.childImageSharp.fluid} />
           })}
         </div>
@@ -73,9 +73,9 @@ const Projects = () => {
 const About = () => {
   return (
     <div className="container">
-      <div className="home-about center flex-column">
+      <div className="home-about p-5 p-md-0 center flex-column">
         <h2 className="text-center heading display-1">About Me?</h2>
-        <p>
+        <p className="text-center">
           Well, for that you can just click <b>here</b>
         </p>
       </div>
