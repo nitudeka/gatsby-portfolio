@@ -6,6 +6,30 @@
   top: 0;
   left: 0;
   z-index: 100;
+  overflow-y: hidden;
+  height: $navbar-height;
+  transition: height 0.3s;
+
+  &--active {
+    height: 22rem;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    align-self: flex-start;
+
+    &__nav {
+      align-self: flex-start;
+      list-style: none;
+    }
+
+    &__icon {
+      background-color: rgba($color-black, 0.8);
+      height: 5px;
+      border-radius: 5px;
+      width: 5rem;
+    }
+  }
 
   &__nav {
     list-style: none;
@@ -28,5 +52,14 @@
 
   &__li:not(:last-child) {
     border-right: 1px solid $color-black;
+  }
+
+  .hamburger__nav &__li {
+    border-right: none;
+  }
+
+  .hamburger__nav .navbar__link {
+    font-size: 2rem;
+    letter-spacing: 2px;
   }
 }

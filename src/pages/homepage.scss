@@ -9,8 +9,12 @@
 
     b {
       font-weight: 700;
-      cursor: pointer;
       font-size: 2.5rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
     }
 
     .heading {
@@ -28,70 +32,8 @@
     }
   }
 
-  // &-project {
-  //   &__card {
-  //     color: $color-white;
-
-  //     .side {
-  //       // border-top: 2px solid $color-white;
-  //       // border-right: 2px solid $color-white;
-  //     }
-
-  //     .info {
-  //       color: $color-black;
-
-  //       .stack {
-  //         font-weight: 700;
-  //       }
-  //     }
-
-  //     &-info {
-  //       .number {
-  //         font-weight: 700;
-  //         font-size: 1.2rem;
-  //         border-bottom: 3px solid $color-white;
-  //         padding-bottom: 5px;
-  //       }
-
-  //       .name {
-  //         font-weight: 700;
-  //         font-size: 3rem;
-  //       }
-  //     }
-
-  //     &-container {
-  //       margin-top: 6rem;
-  //       width: calc(100% - 7rem);
-  //       background-color: $color-black;
-  //       min-height: 50vw;
-  //     }
-
-  //     &-img {
-  //       width: 100%;
-  //       right: -7rem;
-  //       top: -3rem;
-  //       height: calc(100% - 10rem);
-  //       background-color: blue;
-  //       object-fit: cover;
-  //       object-position: center;
-  //       filter: grayscale(1);
-  //       border: 3px solid $color-black;
-  //       transition: all 0.5s;
-  //       cursor: pointer;
-
-  //       &:hover {
-  //         filter: grayscale(0);
-  //       }
-  //     }
-
-  //     &:not(:last-child) {
-  //       margin-bottom: 14rem;
-  //     }
-  //   }
-  // }
-
   &-project {
-    height: 52rem;
+    height: 60rem;
     border: 2px solid $color-black;
 
     &__redirect {
@@ -145,6 +87,10 @@
       bottom: 5rem;
       opacity: 1;
       transform: rotate(0);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 10rem;
     }
   }
 

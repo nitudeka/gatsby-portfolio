@@ -1,7 +1,7 @@
 import React from "react"
 import "./project.scss"
 
-import DemoImg from "../images/project/featured/natour.png"
+import DemoImg from "../images/project/featured/001.png"
 
 const Project = props => {
   return (

@@ -1,7 +1,7 @@
 @import "../sass/variables";
 
 .works {
-  margin-top: 7rem;
+  margin-top: $navbar-height;
 
   &__container {
     display: grid;
