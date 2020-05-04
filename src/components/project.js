@@ -7,7 +7,11 @@ const Project = props => {
   return (
     <div className="project d-inline-block p-4">
       <div className="project__container">
-        <img src={DemoImg} className="project__img w-100 shadow mb-3" />
+        <img
+          src={DemoImg}
+          alt="project"
+          className="project__img w-100 shadow mb-3"
+        />
         <p className="project__number">
           <b>001/009</b>
         </p>

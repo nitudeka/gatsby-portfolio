@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -46,11 +47,29 @@ const AboutPage = () => (
         <p>OK, that is it. Don't know anything else to write</p>
         <p>
           Want to say hi, just don't ping me on social media (not a social media
-          person), insteed contact me by filling out the form <b>here.</b>
+          person), insteed contact me by filling out the form{" "}
+          <Link to="/contact">
+            <b>here.</b>
+          </Link>
         </p>
         <p>
-          Oh, wait, wait, wait!!! In case you want to checkout my <b>Github</b>{" "}
-          and <b>LinkedIn</b> profile.
+          Oh, wait, wait, wait!!! In case you want to checkout my{" "}
+          <a
+            href="https://github.com/nitudeka"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <b>Github</b>
+          </a>
+          and{" "}
+          <a
+            href="https://www.linkedin.com/in/nitu-deka-12bb42160/"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <b>LinkedIn</b>
+          </a>{" "}
+          profile.
         </p>
       </div>
     </div>

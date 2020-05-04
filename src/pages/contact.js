@@ -37,7 +37,11 @@ const ContactPage = () => {
               </li>
               <li className="mb-4">
                 <b>Github:</b>{" "}
-                <a href="https://github.com/nitudeka" target="_blank">
+                <a
+                  href="https://github.com/nitudeka"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   nitudeka
                 </a>
               </li>
@@ -45,6 +49,7 @@ const ContactPage = () => {
                 <b>LinkedIn:</b>{" "}
                 <a
                   href="https://www.linkedin.com/in/nitu-deka-12bb42160/"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   nitu-deka-12bb42160

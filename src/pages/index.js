@@ -23,7 +23,7 @@ const ProjectCard = ({ imgData, projectData }) => {
         <p>{projectData.info}</p>
       </div>
       <div className="home-project__redirect position-absolute center shadow">
-        <a href={projectData.link} target="_blank">
+        <a href={projectData.link} rel="noopener noreferrer" target="_blank">
           <img src={RedirectSvg} alt="redirect" />
         </a>
       </div>
