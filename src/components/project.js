@@ -2,8 +2,6 @@ import React from "react"
 import Img from "gatsby-image"
 import "./project.scss"
 
-import DemoImg from "../images/project/featured/001.png"
-
 const Project = ({ number, projectData, imgData }) => {
   return (
     <div className="project d-inline-block p-4">
