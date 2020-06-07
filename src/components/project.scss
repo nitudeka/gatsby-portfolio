@@ -2,6 +2,7 @@
 
 .project {
   border: 1px solid $color-black;
+  margin-bottom: 5rem;
 
   &__number {
     font-size: 1.1rem;
@@ -20,9 +21,5 @@
     p {
       margin: 0;
     }
-  }
-
-  &:not(:last-child) {
-    margin-bottom: 5rem;
   }
 }
