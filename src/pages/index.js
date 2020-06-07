@@ -34,14 +34,11 @@ const ProjectCard = ({ imgData, projectData }) => {
 const Projects = () => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(
-        filter: { dir: { regex: "/project/featured/" } }
-        sort: { fields: [name] }
-      ) {
+      allFile(filter: { dir: { regex: "/project/" } }) {
         edges {
           node {
             childImageSharp {
-              fluid(maxWidth: 1280) {
+              fluid(maxWidth: 1920) {
                 originalName
                 ...GatsbyImageSharpFluid
               }
@@ -51,31 +48,36 @@ const Projects = () => {
       }
     }
   `)
-  const projects = {
-    "001": {
+
+  const projects = [
+    {
       number: "001/003",
-      stack: "NODE : REACT : MONGO : AWS : FIREBASE : TWILIO",
-      name: "TOVP API",
-      info:
-        "It is the API for the TOVP app. It has a backend created with Node.js, a MongoDB database, an admin panel created with React.js to monitor user activity and handle some administrative lavel tasks such as sending push notifications, etc.",
-      link: "https://play.google.com/store/apps/details?id=com.tovp",
-    },
-    "002": {
-      number: "002/003",
       stack: "VUE : NODE : MONGO : AWS : SASS",
       name: "TecMeadows",
+      imgName: "tecmeadows.png",
       info:
         "An IT company website having a frontend created with Vue.js and a backend created with Node.js and MongoDB, with an admin panel to write blogs and handle certain tasks",
       link: "https://tecmeadows.com/",
     },
-    "003": {
-      number: "003/003",
-      stack: "HTML : SASS",
-      name: "Natours",
-      info: "A demo landing page created with HTML and SASS",
-      link: "https://nitudeka.github.io/natour/",
+    {
+      number: "002/003",
+      stack: "NODE : REACT : MONGO : AWS : FIREBASE : TWILIO",
+      name: "TOVP API",
+      imgName: "api.png",
+      info:
+        "It is the API for the TOVP app. It has a backend created with Node.js, a MongoDB database, an admin panel created with React.js to monitor user activity and handle some administrative lavel tasks such as sending push notifications, etc.",
+      link: "https://play.google.com/store/apps/details?id=com.tovp",
     },
-  }
+    {
+      number: "003/003",
+      stack: "REACT : GATSBY.JS : SASS : BOOTSTRAP",
+      name: "SRC Feeds",
+      imgName: "src-feeds.png",
+      info:
+        "It is a Cattle, Poultry, Fish, Pig feed manufacturer company website created with Gatsby.js on top of React.js",
+      link: "http://srcfeeds.com/",
+    },
+  ]
 
   return (
     <div className="home-projects py-5">
@@ -84,15 +86,19 @@ const Projects = () => {
           Featured Projects:
         </h2>
         <div className="home-projects__container">
-          {data.allFile.edges.map(({ node }, i) => {
-            const imgData = node.childImageSharp.fluid
-            const imgName = imgData.originalName.split(".")[0]
+          {projects.map((project, i) => {
+            const images = data.allFile.edges
+            let imageData
+            for (let i = 0; i < images.length; i++) {
+              if (
+                images[i].node.childImageSharp.fluid.originalName ===
+                project.imgName
+              ) {
+                imageData = { ...images[i].node.childImageSharp.fluid }
+              }
+            }
             return (
-              <ProjectCard
-                key={i}
-                projectData={projects[imgName]}
-                imgData={node.childImageSharp.fluid}
-              />
+              <ProjectCard key={i} projectData={project} imgData={imageData} />
             )
           })}
         </div>

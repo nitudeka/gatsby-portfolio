@@ -52,7 +52,6 @@ const HamburgerMenu = () => {
 
 const Navbar = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false)
-  console.log(hamburgerActive)
 
   return (
     <nav
