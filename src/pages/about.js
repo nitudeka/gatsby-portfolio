@@ -47,28 +47,28 @@ const AboutPage = () => (
         <p>OK, that is it. Don't know anything else to write</p>
         <p>
           Want to say hi, just don't ping me on social media (not a social media
-          person), insteed contact me by filling out the form{" "}
+          person), insteed contact me by filling out the form
           <Link to="/contact">
-            <b>here.</b>
+            <b> here.</b>
           </Link>
         </p>
         <p>
-          Oh, wait, wait, wait!!! In case you want to checkout my{" "}
+          Oh, wait, wait, wait!!! In case you want to checkout my
           <a
             href="https://github.com/nitudeka"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <b>Github</b>
+            <b> Github </b>
           </a>
-          and{" "}
+          and
           <a
             href="https://www.linkedin.com/in/nitu-deka-12bb42160/"
             rel="noopener noreferrer"
             target="_blank"
           >
-            <b>LinkedIn</b>
-          </a>{" "}
+            <b> LinkedIn </b>
+          </a>
           profile.
         </p>
       </div>
