@@ -74,6 +74,24 @@ const WorksProject = () => {
     },
   ]
 
+  const portfolios = [
+    {
+      stack: "REACT : SASS",
+      imgName: "portfolio-1.png",
+      link: "https://nitudeka.github.io/my_portfolio/",
+    },
+    {
+      stack: "VUE : SASS",
+      imgName: "portfolio-2.png",
+      link: "https://nitudeka.netlify.app/",
+    },
+    {
+      stack: "REACT : SASS",
+      imgName: "portfolio-3.png",
+      link: "https://nitudeka-v2.netlify.app/",
+    },
+  ]
+
   return (
     <Layout>
       <SEO title="Works" />
@@ -98,6 +116,31 @@ const WorksProject = () => {
               <Project
                 key={i}
                 number={`00${i + 1}/00${projects.length}`}
+                projectData={project}
+                imgData={imageData}
+              />
+            )
+          })}
+        </div>
+        <h2 className="home-projects__heading display-4 d-inline-block p-4">
+          All my portfolio sites:
+        </h2>
+        <div className="works__container my-5">
+          {portfolios.map((project, i) => {
+            const images = data.allFile.edges
+            let imageData
+            for (let i = 0; i < images.length; i++) {
+              if (
+                images[i].node.childImageSharp.fluid.originalName ===
+                project.imgName
+              ) {
+                imageData = { ...images[i].node.childImageSharp.fluid }
+              }
+            }
+            return (
+              <Project
+                key={i}
+                number={`00${i + 1}/00${portfolios.length}`}
                 projectData={project}
                 imgData={imageData}
               />
