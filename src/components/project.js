@@ -6,11 +6,13 @@ const Project = ({ number, projectData, imgData }) => {
   return (
     <div className="project d-inline-block p-4">
       <div className="project__container">
-        <Img
-          fluid={imgData}
-          alt={projectData.name}
-          className="project__img w-100 shadow mb-3"
-        />
+        <a href={projectData.link} rel="noopener noreferrer" target="_blank">
+          <Img
+            fluid={imgData}
+            alt={projectData.name}
+            className="project__img w-100 shadow mb-3"
+          />
+        </a>
         <p className="project__number">
           <b>{number}</b>
         </p>
