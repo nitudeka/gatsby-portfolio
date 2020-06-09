@@ -9,15 +9,22 @@ const validateEmail = email => {
   return re.test(email)
 }
 
-const Form = () => {
+const Form = ({ setMailSent }) => {
   const [email, setEmail] = useState("")
   const [subject, setSubject] = useState("")
   const [message, setMessage] = useState("")
+  const [errors, setErrors] = useState([])
 
   const submit = () => {
+    const errors = []
     const isEmailValid = validateEmail(email)
-    if (!isEmailValid || !subject || !message) return
-    console.log(email, subject, message)
+    if (!isEmailValid && email) errors.push("Invalid email address")
+    if (!email) errors.push("Email is required")
+    if (!subject) errors.push("Subject is required")
+    if (!message) errors.push("Message is required")
+    setErrors(errors)
+    if (errors.length) return
+    setMailSent(true)
   }
 
   return (
@@ -27,21 +34,30 @@ const Form = () => {
           onChange={e => setEmail(e.target.value)}
           type="email"
           placeholder="Email"
-          className="w-100 bg-danger"
+          className="w-100"
         />
         <input
           onChange={e => setSubject(e.target.value)}
           type="text"
           placeholder="Subject"
-          className="w-100 bg-danger"
+          className="w-100"
         />
         <textarea
           onChange={e => setMessage(e.target.value)}
           rows="4"
           placeholder="Message"
-          className="w-100 bg-danger"
+          className="w-100"
         ></textarea>
       </div>
+      <ul className="contact__errors">
+        {errors.map((err, i) => {
+          return (
+            <li key={i} className="text-danger">
+              {i + 1}. {err}
+            </li>
+          )
+        })}
+      </ul>
       <button onClick={submit} className="contact__btn px-3 mt-4">
         Send
       </button>
@@ -50,6 +66,8 @@ const Form = () => {
 }
 
 const ContactPage = () => {
+  const [mailSent, setMailSent] = useState(false)
+
   return (
     <Layout>
       <SEO title="Contact" />
@@ -57,7 +75,16 @@ const ContactPage = () => {
         <div className="contact__heading text-center py-3">C0NTACT ME</div>
         <div className="row mt-5">
           <div className="col-md-7">
-            <Form />
+            {!mailSent ? (
+              <Form setMailSent={setMailSent} />
+            ) : (
+              <div className="h-100 d-flex justify-content-center align-items-center flex-column">
+                <h2 style={{ fontWeight: "bold", fontSize: "6rem" }}>
+                  Thanks!
+                </h2>
+                <p>I will revert back to you shortly</p>
+              </div>
+            )}
           </div>
           <div className="col-md-5 mt-md-0 mt-5">
             <ul className="contact__list">
