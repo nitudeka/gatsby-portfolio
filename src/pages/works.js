@@ -123,7 +123,7 @@ const WorksProject = () => {
           })}
         </div>
         <h2 className="home-projects__heading display-4 d-inline-block p-4">
-          All my portfolio sites:
+          My other portfolio sites:
         </h2>
         <div className="works__container my-5">
           {portfolios.map((project, i) => {
