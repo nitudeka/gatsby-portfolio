@@ -15,24 +15,27 @@ const AboutPage = () => (
           <p className="text-center">
             Trust me, I really don't know what happened to the image
           </p>
+          <p className="text-center">
+            Maybe a <b>"BUG"</b> 😱
+          </p>
         </div>
       </div>
       <div className="container about__content">
         <h2 className="text-center my-4">Hi, I am...</h2>
         <p>
           well, you might already know my name (I am assuming it because it is
-          right inside the header of my homepage with a bold and overwhelmingly
-          large font size, even a blind person could see this. No offence).
+          right inside the header of my homepage with bold and overwhelmingly
+          large font size, even a blind person could see this).
         </p>
         <p>
           OK, sorry for that (Actually, I am terrible at writing. So filling out
-          the "about" page with absolute sh!t).
+          the <b>"About"</b> page with absolute sh!t).
         </p>
         <h2>Lets start!</h2>
         <p>I am a self taught full stack developer.</p>
         <p>
-          Started my journey of coding in around the mid of 2017 and enjoying
-          the ride so far.
+          Started my journey of coding around the mid of 2017 and enjoying the
+          ride so far.
         </p>
         <p>
           <b>Favourite language:</b> Python || Javascript (not sure, which one)
@@ -41,19 +44,23 @@ const AboutPage = () => (
           <b>Favourite stack:</b> MERN (Node, React and Mongo fanboy)
         </p>
         <p>
-          <b>Hobbies:</b> 404 Not Found (don't enjoy doing anything except
-          coding)
+          <b>Hobbies:</b> 404 Not Found (no, seriously!! I really don't have any
+          hobbies)
         </p>
-        <p>OK, that is it. Don't know anything else to write</p>
         <p>
-          Want to say hi, just don't ping me on social media (not a social media
-          person), insteed contact me by filling out the form
+          OK, that is it. Don't ask me how I wrote that much <s>content</s>
+          (sh!t) on my <b>"About"</b> page. But still, if you do, the obvious
+          answer would be:- <b>I HAVE NOOOOOOOOO IDEA!!</b>
+        </p>
+        <p>
+          Want to say hi, don't you even think about finding me on social media.
+          But, if you really want to contact me just fill out this
           <Link to="/contact">
-            <b> here.</b>
+            <b> form.</b>
           </Link>
         </p>
         <p>
-          Oh, wait, wait, wait!!! In case you want to checkout my
+          Oh, wait, wait, wait!!! In case you want to check out my
           <a
             href="https://github.com/nitudeka"
             rel="noopener noreferrer"
@@ -69,7 +76,7 @@ const AboutPage = () => (
           >
             <b> LinkedIn </b>
           </a>
-          profile.
+          profiles.
         </p>
       </div>
     </div>
