@@ -52,12 +52,12 @@ const Projects = () => {
   const projects = [
     {
       number: "001/003",
-      stack: "VUE : NODE : MONGO : AWS : SASS",
-      name: "TecMeadows",
-      imgName: "tecmeadows.png",
+      stack: "REACT : TAILWIND : TYPESCRIPT",
+      name: "Chat360",
+      imgName: "chat360.png",
       info:
-        "An IT company website having a frontend created with Vue.js and a backend created with Node.js and MongoDB, with an admin panel to write blogs and handle certain tasks",
-      link: "https://tecmeadows.com/",
+        "It is a webapp that can create chatbots with a drag and drop canvas, consists of live-chat to chat with the users, authorization, role based authorization, a chatbot interface, to name a few.",
+      link: "https://app.chat360.io/",
     },
     {
       number: "002/003",
@@ -70,12 +70,12 @@ const Projects = () => {
     },
     {
       number: "003/003",
-      stack: "REACT : GATSBY.JS : SASS : BOOTSTRAP",
-      name: "SRC Feeds",
-      imgName: "src-feeds.png",
+      stack: "REACT : GATSBY : TAILWIND",
+      name: "ReddWings",
+      imgName: "reddwings.png",
       info:
-        "It is a Cattle, Poultry, Fish, Pig feed manufacturer company website created with Gatsby.js on top of React.js",
-      link: "http://srcfeeds.com/",
+        "A landing page for an air-hostess institute. Gatsby is used here for a better SEO",
+      link: "https://loving-roentgen-daea3e.netlify.app/",
     },
   ]
 

@@ -27,7 +27,7 @@ const WorksProject = () => {
 
   const projects = [
     {
-      stack: "REACT",
+      stack: "REACT : TAILWIND : TYPESCRIPT",
       name: "Chat360",
       imgName: "chat360.png",
       info:
@@ -35,12 +35,12 @@ const WorksProject = () => {
       link: "https://app.chat360.io/",
     },
     {
-      stack: "REACT : GATSBY",
+      stack: "REACT : GATSBY : TAILWIND",
       name: "ReddWings",
       imgName: "reddwings.png",
       info:
         "A landing page for an air-hostess institute. Gatsby is used here for a better SEO",
-      link: "https://app.chat360.io/",
+      link: "https://loving-roentgen-daea3e.netlify.app/",
     },
     {
       stack: "NODE : POSTGRESQL : REACT : HEROKU",
