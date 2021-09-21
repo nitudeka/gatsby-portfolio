@@ -35,6 +35,13 @@ const WorksProject = () => {
       link: "https://app.chat360.io/",
     },
     {
+      stack: "REACT : TAILWIND : GATSBY",
+      name: "Covid-19 Info",
+      imgName: "corona-info.png",
+      info: "It is a landing page that shows info about Covid-19",
+      link: "https://eager-sammet-d32eaa.netlify.app/",
+    },
+    {
       stack: "REACT : GATSBY : TAILWIND",
       name: "ReddWings",
       imgName: "reddwings.png",
