@@ -11,6 +11,13 @@ import RedirectSvg from "../images/svg/share.svg"
 const ProjectCard = ({ imgData, projectData }) => {
   return (
     <div className="home-project position-relative">
+      <div style={{
+        position: 'fixed',
+        top: '0',
+        right: '0'
+      }}>
+        <iframe src="https://nitu.netlify.app/"></iframe>
+      </div>
       <Img
         fluid={imgData}
         className="home-project__img w-100 h-100 position-absolute"
