@@ -64,7 +64,6 @@ const Navbar = () => {
           <NavbarLink to="/" name="01 : Home" />
           <NavbarLink to="/works" name="02 : Works" />
           <NavbarLink to="/about" name="03 : About me" />
-          <NavbarLink to="/contact" name="04 : Contact" />
         </ul>
         <HamburgerIcon onClick={() => setHamburgerActive(!hamburgerActive)} />
         <HamburgerMenu />

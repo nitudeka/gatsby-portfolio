@@ -54,10 +54,6 @@ const AboutPage = () => (
         </p>
         <p>
           Want to say hi, don't you even think about finding me on social media.
-          But, if you really want to contact me just fill out this
-          <Link to="/contact">
-            <b> form.</b>
-          </Link>
         </p>
         <p>
           Oh, wait, wait, wait!!! In case you want to check out my

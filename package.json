@@ -21,8 +21,8 @@
   },
   "devDependencies": {
     "gatsby-plugin-sass": "^2.2.3",
-    "node-sass": "^4.13.1",
-    "prettier": "2.0.4"
+    "prettier": "2.0.4",
+    "sass": "^1.62.1"
   },
   "keywords": [
     "gatsby"
