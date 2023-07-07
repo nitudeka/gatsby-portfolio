@@ -8,9 +8,9 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
-      resolve: `gatsby-plugin-google-tagmanager`,
+      resolve: `gatsby-plugin-google-gtag`,
       options: {
-        id: process.env.GOOGLE_TAGMANAGER_ID,
+        trackingIds: [process.env.GOOGLE_TAGMANAGER_ID],
       },
     },
     {
