@@ -1,13 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import "./about.scss"
 
 const AboutPage = () => (
   <Layout>
-    <SEO title="About" />
+    <Seo title="About" />
     <div className="about">
       <div className="container">
         <div className="about__container p-5 center flex-column">

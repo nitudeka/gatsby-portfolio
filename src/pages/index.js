@@ -1,9 +1,8 @@
 import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
-
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import Header from "../components/header"
 import "./homepage.scss"
 import RedirectSvg from "../images/svg/share.svg"
@@ -55,8 +54,7 @@ const Projects = () => {
       stack: "REACT : TAILWIND : TYPESCRIPT",
       name: "Chat360",
       imgName: "chat360.png",
-      info:
-        "It is a webapp that can create chatbots with a drag and drop canvas, consists of live-chat to chat with the users, authorization, role based authorization, a chatbot interface, to name a few.",
+      info: "It is a webapp that can create chatbots with a drag and drop canvas, consists of live-chat to chat with the users, authorization, role based authorization, a chatbot interface, to name a few.",
       link: "https://app.chat360.io/",
     },
     {
@@ -64,8 +62,7 @@ const Projects = () => {
       stack: "NODE : REACT : MONGO : AWS : FIREBASE : TWILIO",
       name: "TOVP API",
       imgName: "api.png",
-      info:
-        "It is the API for the TOVP app. It has a backend created with Node.js, a MongoDB database, an admin panel created with React.js to monitor user activity and handle some administrative lavel tasks such as sending push notifications, etc.",
+      info: "It is the API for the TOVP app. It has a backend created with Node.js, a MongoDB database, an admin panel created with React.js to monitor user activity and handle some administrative lavel tasks such as sending push notifications, etc.",
       link: "https://play.google.com/store/apps/details?id=com.tovp",
     },
     {
@@ -73,8 +70,7 @@ const Projects = () => {
       stack: "REACT : GATSBY : TAILWIND",
       name: "ReddWings",
       imgName: "reddwings.png",
-      info:
-        "A landing page for an air-hostess institute. Gatsby is used here for a better SEO",
+      info: "A landing page for an air-hostess institute. Gatsby is used here for a better SEO",
       link: "https://loving-roentgen-daea3e.netlify.app/",
     },
   ]
@@ -130,7 +126,7 @@ const About = () => {
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <Seo title="Home" />
     <Header />
     <Projects />
     <About />

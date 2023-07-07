@@ -28,14 +28,14 @@ NavbarLink.defaultProps = {
 
 const HamburgerIcon = ({ onClick }) => {
   return (
-    <div
+    <button
       onClick={onClick}
       className="hamburger ml-auto center flex-column d-md-none mb-4"
     >
       <span className="hamburger__icon hamburger__icon--1 mb-2"></span>
       <span className="hamburger__icon hamburger__icon--2 mb-2"></span>
       <span className="hamburger__icon hamburger__icon--3"></span>
-    </div>
+    </button>
   )
 }
 

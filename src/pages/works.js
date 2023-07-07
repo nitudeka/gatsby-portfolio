@@ -1,8 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import "./works.scss"
 import Project from "../components/project"
 import HammerSvg from "../images/svg/hammer.svg"
@@ -30,8 +29,7 @@ const WorksProject = () => {
       stack: "REACT : TAILWIND : TYPESCRIPT",
       name: "Chat360",
       imgName: "chat360.png",
-      info:
-        "It is a webapp that can create chatbots with a drag and drop canvas, consists of live-chat to chat with the users, authorization, role based authorization, a chatbot interface, to name a few.",
+      info: "It is a webapp that can create chatbots with a drag and drop canvas, consists of live-chat to chat with the users, authorization, role based authorization, a chatbot interface, to name a few.",
       link: "https://app.chat360.io/",
     },
     {
@@ -45,24 +43,21 @@ const WorksProject = () => {
       stack: "REACT : GATSBY : TAILWIND",
       name: "ReddWings",
       imgName: "reddwings.png",
-      info:
-        "A landing page for an air-hostess institute. Gatsby is used here for a better SEO",
+      info: "A landing page for an air-hostess institute. Gatsby is used here for a better SEO",
       link: "https://loving-roentgen-daea3e.netlify.app/",
     },
     {
       stack: "NODE : POSTGRESQL : REACT : HEROKU",
       name: "Smart Brain",
       imgName: "smart-brain.png",
-      info:
-        "This is a webapp that can detect faces in a given photo if a face is present there.",
+      info: "This is a webapp that can detect faces in a given photo if a face is present there.",
       link: "https://nitudeka.github.io/smart_brain/",
     },
     {
       stack: "NODE : REACT : MONGO : AWS : FIREBASE : TWILIO",
       name: "TOVP API",
       imgName: "api.png",
-      info:
-        "It is the API for the TOVP app. It has a backend created with Node.js, a MongoDB database, an admin panel created with React.js to monitor user activity and handle some administrative lavel tasks such as sending push notifications, etc.",
+      info: "It is the API for the TOVP app. It has a backend created with Node.js, a MongoDB database, an admin panel created with React.js to monitor user activity and handle some administrative lavel tasks such as sending push notifications, etc.",
       link: "https://play.google.com/store/apps/details?id=com.tovp",
     },
     {
@@ -76,8 +71,7 @@ const WorksProject = () => {
       stack: "VUE : NODE : MONGO : AWS : SASS",
       name: "TecMeadows",
       imgName: "tecmeadows.png",
-      info:
-        "An IT company website having a frontend created with Vue.js and a backend created with Node.js and MongoDB, with an admin panel to write blogs and handle certain tasks",
+      info: "An IT company website having a frontend created with Vue.js and a backend created with Node.js and MongoDB, with an admin panel to write blogs and handle certain tasks",
       link: "https://tecmeadows.com/",
     },
     {
@@ -91,8 +85,7 @@ const WorksProject = () => {
       stack: "REACT : GATSBY.JS : SASS : BOOTSTRAP",
       name: "SRC Feeds",
       imgName: "src-feeds.png",
-      info:
-        "It is a Cattle, Poultry, Fish, Pig feed manufacturer company website created with Gatsby.js on top of React.js",
+      info: "It is a Cattle, Poultry, Fish, Pig feed manufacturer company website created with Gatsby.js on top of React.js",
       link: "http://srcfeeds.com/",
     },
   ]
@@ -117,7 +110,7 @@ const WorksProject = () => {
 
   return (
     <Layout>
-      <SEO title="Works" />
+      <Seo title="Works" />
       <div className="works container">
         <div className="works__header py-4 center flex-column">
           <img src={HammerSvg} alt="hammer" />
